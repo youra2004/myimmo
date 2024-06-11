@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "prop-buddy-test",
+    "slug": "prop-buddy-test",
+    "version": "1.0.14",
+    "orientation": "portrait",
+    "icon": "./src/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./src/assets/splash2.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sviatoslad.expo3",
+      "buildNumber": "1"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions": ["android.permission.RECORD_AUDIO"],
+      "package": "com.sviatoslad.expo3"
+    },
+    "web": {
+      "favicon": "./src/assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ],
+      [
+        "expo-document-picker",
+        {
+          "iCloudContainerEnvironment": "Production"
+        }
+      ],
+      ["@react-native-google-signin/google-signin"]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "def8b7b4-7d71-4c48-be9f-9b4e6fff7e97"
+      }
+    }
+  }
+}
